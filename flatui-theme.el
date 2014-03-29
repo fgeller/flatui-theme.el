@@ -428,12 +428,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mode-line
      ((,class (:foreground ,clouds
                            :background ,midnight-blue
-                           :box (:line-width -1 :style released-button)))
+                           :box nil))
       (t :inverse-video t)))
    `(mode-line-inactive
      ((t (:foreground ,wet-asphalt
                       :background ,silver
-                      :box (:line-width -1 :style released-button)))))
+                      :box nil))))
    `(mode-line-buffer-id ((t (:foreground ,alizarin :weight bold))))
    `(sml/global ((t (:foreground ,clouds))))
    `(sml/modes ((t (:foreground ,nephritis))))
