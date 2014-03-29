@@ -152,7 +152,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ace-jump-face-background
      ((t (:foreground ,nephritis :background ,clouds :inverse-video nil))))
    `(ace-jump-face-foreground
-     ((t (:foreground ,nephritis :background ,clouds :inverse-video nil))))
+     ((t (:foreground ,pumpkin :background ,clouds :inverse-video nil))))
 ;;;;; anzu
    `(anzu-mode-line ((t (:foreground ,turquoise :weight bold))))
 ;;;;; auto-complete
