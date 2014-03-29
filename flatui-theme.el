@@ -83,9 +83,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    'flatui
 ;;;; Built-in
 ;;;;; basic coloring
-   '(button ((t (:underline t))))
-   `(link ((t (:foreground ,peter-river :underline t :weight bold))))
-   `(link-visited ((t (:foreground ,amethyst :underline t :weight normal))))
+   '(button ((t (:underline nil))))
+   `(link ((t (:foreground ,peter-river :underline nil :weight bold))))
+   `(link-visited ((t (:foreground ,amethyst :underline nil :weight normal))))
    `(default ((t (:foreground ,midnight-blue :background ,clouds))))
    `(cursor ((t (:foreground ,midnight-blue :background ,wet-asphalt))))
    `(escape-glyph ((t (:foreground ,sun-flower :bold t))))
@@ -99,21 +99,21 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; compilation
    `(compilation-column-face ((t (:foreground ,orange))))
    `(compilation-enter-directory-face ((t (:foreground ,green-sea))))
-   `(compilation-error-face ((t (:foreground ,pomegranate :weight bold :underline t))))
+   `(compilation-error-face ((t (:foreground ,pomegranate :weight bold :underline nil))))
    `(compilation-face ((t (:foreground ,midnight-blue))))
    `(compilation-info-face ((t (:foreground ,peter-river))))
-   `(compilation-info ((t (:foreground ,nephritis :underline t))))
+   `(compilation-info ((t (:foreground ,nephritis :underline nil))))
    `(compilation-leave-directory-face ((t (:foreground ,wisteria))))
    `(compilation-line-face ((t (:foreground ,sun-flower))))
    `(compilation-line-number ((t (:foreground ,sun-flower))))
    `(compilation-message-face ((t (:foreground ,wet-asphalt))))
-   `(compilation-warning-face ((t (:foreground ,pumpkin :weight bold :underline t))))
+   `(compilation-warning-face ((t (:foreground ,pumpkin :weight bold :underline nil))))
    `(compilation-mode-line-exit ((t (:foreground ,turquoise :weight bold))))
    `(compilation-mode-line-fail ((t (:foreground ,pomegranate :weight bold))))
    `(compilation-mode-line-run ((t (:foreground ,orange :weight bold))))
 ;; ;;;;; grep
    `(grep-context-face ((t (:foreground ,wet-asphalt))))
-   `(grep-error-face ((t (:foreground ,pomegranate :weight bold :underline t))))
+   `(grep-error-face ((t (:foreground ,pomegranate :weight bold :underline nil))))
    `(grep-hit-face ((t (:foreground ,turquoise :weight bold))))
    `(grep-match-face ((t (:foreground ,sun-flower :weight bold))))
    `(match ((t (:background ,turquoise :foreground ,wet-asphalt))))
@@ -168,9 +168,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    ;; `(bm-fringe-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
    ;; `(bm-persistent-face ((t (:background ,zenburn-green-1 :foreground ,zenburn-bg))))
 ;;;;; clojure-test-mode
-   `(clojure-test-failure-face ((t (:foreground ,carrot :weight bold :underline t))))
-   `(clojure-test-error-face ((t (:foreground ,alizarin :weight bold :underline t))))
-   `(clojure-test-success-face ((t (:foreground ,emerald :weight bold :underline t))))
+   `(clojure-test-failure-face ((t (:foreground ,carrot :weight bold :underline nil))))
+   `(clojure-test-error-face ((t (:foreground ,alizarin :weight bold :underline nil))))
+   `(clojure-test-success-face ((t (:foreground ,emerald :weight bold :underline nil))))
 ;;;;; diff
    `(diff-added ((,class (:foreground ,nephritis :background ,clouds))
                  (t (:foreground ,nephritis :background ,clouds))))
@@ -259,7 +259,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;    `(erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
 ;;    `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
 ;;    `(erc-timestamp-face ((t (:foreground ,zenburn-green+4))))
-;;    `(erc-underline-face ((t (:underline t))))
+;;    `(erc-underline-face ((t (:underline nil))))
 ;;;;; eshell
    `(eshell-prompt ((t (:foreground ,pomegranate :weight bold))))
    `(eshell-ls-archive ((t (:foreground ,amethyst :weight bold))))
@@ -278,15 +278,15 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(flycheck-error
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,alizarin) :inherit unspecified))
-      (t (:foreground ,alizarin :weight bold :underline t))))
+      (t (:foreground ,alizarin :weight bold :underline nil))))
    `(flycheck-warning
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,orange) :inherit unspecified))
-      (t (:foreground ,sun-flower :weight bold :underline t))))
+      (t (:foreground ,sun-flower :weight bold :underline nil))))
    `(flycheck-info
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,wisteria) :inherit unspecified))
-      (t (:foreground ,amethyst :weight bold :underline t))))
+      (t (:foreground ,amethyst :weight bold :underline nil))))
    `(flycheck-fringe-error ((t (:foreground ,pomegranate :weight bold))))
    `(flycheck-fringe-warning ((t (:foreground ,orange :weight bold))))
    `(flycheck-fringe-info ((t (:foreground ,wisteria :weight bold))))
@@ -295,26 +295,26 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,alizarin)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,alizarin :weight bold :underline t))))
+      (t (:foreground ,alizarin :weight bold :underline nil))))
    `(flymake-warnline
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,orange)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,orange :weight bold :underline t))))
+      (t (:foreground ,orange :weight bold :underline nil))))
    `(flymake-infoline
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,wisteria)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,wisteria :weight bold :underline t))))
+      (t (:foreground ,wisteria :weight bold :underline nil))))
 ;;;;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,orange) :inherit unspecified))
-      (t (:foreground ,orange :weight bold :underline t))))
+      (t (:foreground ,orange :weight bold :underline nil))))
    `(flyspell-incorrect
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,alizarin) :inherit unspecified))
-      (t (:foreground ,alizarin :weight bold :underline t))))
+      (t (:foreground ,alizarin :weight bold :underline nil))))
 ;;;;; TODO: full-ack
    ;; `(ack-separator ((t (:foreground ,zenburn-fg))))
    ;; `(ack-file ((t (:foreground ,zenburn-blue))))
@@ -500,7 +500,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-css-pseudo-class-face ((t (:foreground ,orange :weight bold))))
    `(web-mode-css-rule-face ((t (:foreground ,belize-hole))))
    `(web-mode-doctype-face ((t (:inherit ,font-lock-comment-face))))
-   `(web-mode-folded-face ((t (:underline t))))
+   `(web-mode-folded-face ((t (:underline nil))))
    `(web-mode-function-name-face ((t (:foreground ,midnight-blue :weight bold))))
    `(web-mode-html-attr-name-face ((t (:foreground ,wisteria))))
    `(web-mode-html-attr-value-face ((t (:inherit ,font-lock-string-face))))
