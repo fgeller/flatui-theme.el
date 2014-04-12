@@ -392,6 +392,23 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-log-head-label-default ((t (:foreground ,midnight-blue :background ,turquoise :weight normal :box nil))))
    `(magit-log-head-label-remote ((t (:foreground ,midnight-blue :background ,sun-flower :weight normal :box nil))))
    `(magit-log-head-label-tags ((t (:foreground ,wisteria :weight normal))))
+
+;;;;; org-mode
+   `(org-block-begin-line ((t (:foreground ,pumpkin :background ,silver))))
+   `(org-block-background ((t (:background ,silver))))
+   `(org-block-end-line ((t (:foreground ,pumpkin :background ,silver))))
+   `(org-link ((t (:foreground ,peter-river :underline nil))))
+   `(org-footnote ((t (:foreground ,peter-river :underline nil))))
+   `(org-date ((t (:foreground ,peter-river :underline nil))))
+   `(org-todo ((t (:foreground ,alizarin))))
+   `(org-done ((t (:foreground ,nephritis))))
+   `(org-special-keyword ((t (:foreground ,orange))))
+   `(org-hide ((t (:foreground ,clouds))))
+   `(org-level-1 ((t (:foreground ,green-sea))))
+   `(org-level-2 ((t (:foreground ,belize-hole))))
+   `(org-level-3 ((t (:foreground ,wisteria))))
+   `(org-level-4 ((t (:foreground ,carrot))))
+
 ;;;;; outline
    `(outline-1 ((t (:foreground ,green-sea))))
    `(outline-2 ((t (:foreground ,belize-hole))))
