@@ -381,7 +381,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;; ;;;;; linum-mode
    `(linum ((t (:foreground ,wet-asphalt :background ,silver))))
 ;;;;; magit
-   `(magit-section-title ((t (:foreground ,peter-river :weight normal))))
+   `(magit-section-title ((t (:foreground ,peter-river :background ,clouds :weight normal :height ,(face-attribute 'default :height)))))
    `(magit-branch ((t (:foreground ,midnight-blue :background ,turquoise :weight normal :box nil))))
    `(magit-item-highlight ((t (:background ,silver))))
    `(magit-log-author ((t (:foreground ,belize-hole))))
