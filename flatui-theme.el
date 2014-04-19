@@ -379,7 +379,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(js2-function-param ((t (:foreground, wet-asphalt))))
    `(js2-external-variable ((t (:foreground ,pumpkin))))
 ;; ;;;;; linum-mode
-   `(linum ((t (:foreground ,wet-asphalt :background ,silver))))
+   `(linum ((t (:foreground ,clouds :background ,asbestos))))
 ;;;;; magit
    `(magit-section-title ((t (:foreground ,peter-river :background ,clouds :weight normal :height ,(face-attribute 'default :height)))))
    `(magit-branch ((t (:foreground ,midnight-blue :background ,turquoise :weight normal :box nil))))
