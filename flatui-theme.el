@@ -94,6 +94,22 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(highlight ((t (:background ,turquoise))))
    `(success ((t (:foreground ,nephritis :weight normal))))
    `(warning ((t (:foreground ,pumpkin :weight normal))))
+
+;;;;; company
+   `(company-tooltip ((t (:foreground ,peter-river :background ,clouds))))
+   `(company-tooltip-selection ((t (:foreground ,peter-river :background ,silver))))
+   `(company-tooltip-mouse ((t (:foreground ,orange :background ,clouds))))
+   `(company-tooltip-common ((t (:foreground ,midnight-blue :background ,clouds))))
+   `(company-tooltip-common-selection ((t (:foreground ,midnight-blue :background ,silver))))
+   `(company-tooltip-annotation ((t (:foreground ,orange :background ,clouds))))
+   `(company-scrollbar-fg ((t (:foreground ,concrete :background ,concrete))))
+   `(company-scrollbar-bg ((t (:foreground ,silver :background ,silver))))
+   `(company-preview ((t (:foreground ,orange :background ,clouds))))
+   `(company-preview-common ((t (:foreground ,asbestos :background ,silver))))
+   `(company-preview-search ((t (:foreground ,midnight-blue :background ,clouds))))
+   `(company-echo ((t (:foreground ,midnight-blue :background ,clouds))))
+   `(company-echo-common ((t (:foreground ,midnight-blue :background ,clouds))))
+
 ;;;;; compilation
    `(compilation-column-face ((t (:foreground ,orange))))
    `(compilation-enter-directory-face ((t (:foreground ,green-sea))))
