@@ -164,9 +164,9 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;; Third-party
 ;;;;; ace-jump
    `(ace-jump-face-background
-     ((t (:foreground ,nephritis :background ,clouds :inverse-video nil))))
+     ((t (:foreground ,asbestos :background ,clouds :inverse-video nil))))
    `(ace-jump-face-foreground
-     ((t (:foreground ,pumpkin :background ,clouds :inverse-video nil :height 180))))
+     ((t (:foreground ,pumpkin :background ,clouds :inverse-video nil))))
 ;;;;; anzu
    `(anzu-mode-line ((t (:foreground ,turquoise :weight normal))))
 ;;;;; auto-complete
@@ -447,7 +447,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,wisteria))))
 ;;;;; show-paren
    `(show-paren-mismatch ((t (:foreground ,sun-flower :background ,pomegranate :weight normal))))
-   `(show-paren-match ((t (:foreground ,clouds :background ,alizarin :weight normal))))
+   `(show-paren-match ((t (:background ,concrete :weight normal))))
 ;;;;; mode-line/sml-mode-line
    `(mode-line
      ((,class (:foreground ,clouds :background ,midnight-blue :box nil))
