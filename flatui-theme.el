@@ -87,7 +87,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(link ((t (:foreground ,peter-river :underline nil :weight normal))))
    `(link-visited ((t (:foreground ,amethyst :underline nil :weight normal))))
    `(default ((t (:foreground ,midnight-blue :background ,clouds))))
-   `(cursor ((t (:foreground ,midnight-blue :background ,wet-asphalt))))
+   `(cursor ((t (:foreground ,midnight-blue :background ,pumpkin))))
    `(escape-glyph ((t (:foreground ,sun-flower :bold t))))
    `(fringe ((t (:foreground ,wet-asphalt :background ,asbestos))))
    `(header-line ((t (:foreground ,midnight-blue :background ,wet-asphalt :box nil :height ,(face-attribute 'default :height)))))
@@ -369,7 +369,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-visible-mark ((t (:foreground ,alizarin))))
 
 ;;;;; highlight-symbol
-   `(highlight-symbol-face ((t (:background ,turquoise))))
+   `(highlight-symbol-face ((t (:background ,silver :weight bold))))
 
 ;;;;; hl-line-mode
    `(hl-line-face ((,class (:background ,silver))
