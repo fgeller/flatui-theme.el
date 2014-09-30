@@ -372,10 +372,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(highlight-symbol-face ((t (:background ,silver :weight bold))))
 
 ;;;;; hl-line-mode
-   `(hl-line-face ((,class (:background ,silver :weight bold))
+   `(hl-line-face ((,class (:background ,silver :weight normal))
                    (t :weight bold)))
-   `(hl-line ((,class (:background ,silver :weight bold)) ; old emacsen
-              (t :weight normal :weight bold)))
+   `(hl-line ((,class (:background ,silver :weight normal)) ; old emacsen
+              (t :weight normal :weight normal)))
 ;;;;; hl-sexp
    `(hl-sexp-face ((,class (:background ,silver))
                    (t :weight normal)))
