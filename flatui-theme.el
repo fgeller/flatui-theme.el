@@ -416,7 +416,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-link ((t (:foreground ,peter-river :underline nil))))
    `(org-footnote ((t (:foreground ,peter-river :underline nil))))
    `(org-date ((t (:foreground ,peter-river :underline nil))))
-   `(org-todo ((t (:foreground ,alizarin))))
+   `(org-todo ((t (:foreground ,wet-asphalt))))
    `(org-done ((t (:foreground ,nephritis))))
    `(org-special-keyword ((t (:foreground ,orange))))
    `(org-hide ((t (:foreground ,clouds))))
